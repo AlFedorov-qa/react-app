@@ -6,14 +6,13 @@
     <link rel="icon" href="./img/favicon.ico" sizes="any">
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="./img/favicon.svg" alt="логотип" height="40"> 
-            <h1 style="display: inline-block"><span style="color:#f52;">Мой</span>Маркет</h1>
-        </div>
+        <img src="./img/favicon.svg" alt="логотип" height="40"> 
+        <h1 class="logo-title"><span class="logo-orange">Мой</span>Маркет</h1>        
     </header>
     <nav>
         <a href="#">Электроника</a> > <a href="#">Смартфоны и гаджеты</a> >
@@ -49,13 +48,12 @@
             <button>512 ГБ</button>
         </div>
         <h3>Характеристики товара</h3>
-        <ul>
+        <ul class="list">
             <li>Экран: <b>6.1</b></li>
             <li>Встроенная память: <b>128 ГБ</b></li>
             <li>Операционная система: <b>iOS 15</b></li>
             <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-            <li>Процессор:<a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank"><b>Appel A15 Bionic</b></a>
-            </li>
+            <li>Процессор:<a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank"><b>Appel A15 Bionic</b></a></li>
             <li>Вес: <b>173 г</b></li>
         </ul>
 
@@ -84,7 +82,7 @@
             или объект, который появился в кадре. Теперь ваши видео будут смотретьсякак настоящее кино.
         </p>
         <h3>Сравнение моделей</h3>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Модель</th>
@@ -110,7 +108,6 @@
                     <td>Нет</td>
                     <td>До 17 часов</td>
                 </tr>
-
                 <tr>
                     <td>Iphone 12</td>
                     <td>164 грамма</td>
@@ -122,7 +119,6 @@
                     <td>Да</td>
                     <td>До 19 часов</td>
                 </tr>
-
                 <tr>
                     <td>Iphone 13</td>
                     <td>174 грамма</td>
@@ -134,38 +130,48 @@
                     <td>Да</td>
                     <td>До 19 часов</td>
                 </tr>
-
             </tbody>
         </table>
 
         <div>
-            <h3 style="display:inline-block">Отзывы</h3>
-            <span style="color: #aaaaaa;">425</span>
+            <h3 class="review_hat">Отзывы</h3>
+            <span class="review_numb">425</span>
             <button>Добавить отзыв</button>
         </div>
+        <div class="review">            
+            <img class="review_photo" src="./img/review-1.jpeg" alt="фотография автора" height="200">
+            
+            <div>
+                <h4>Марк Г.</h4>
+                <img src="./img/star-5.png" alt="Оценка 5 звезд" height="30">
+                <p><b>Опыт использования:</b> менее месяца</p>
 
-        <img src="./img/review-1.jpeg" alt="фотография автора" height="200">
-        <h4>Марк Г.</h4>
-        <img src="./img/star-5.png" alt="Оценка 5 звезд" height="30">
-        <p><b>Опыт использования:</b> менее месяца</p>
-        <p><b>Достоинства:</b><br>
-            это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво.
-            довольно шустрое устройство, камера весьма неплохая,ширик тоже на высоте.<br></p>
-        <p><b>Недостатки:</b><br>
-            к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь) а если нужно переносить
-            фото с компа, то это только через itunes, которыйурезает качество фотографий исходное<br></p>
-        <hr>
-        <img src="./img/review-2.jpeg" alt="фотография автора" height="200">
-        <h4>Валерий Коваленко</h4>
-        <img src="./img/star-4.png" alt="Оценка 4 звезды" height="30">
-        <p><b>Опыт использования:</b> менее месяца</p>
-        <p><b>Достоинства:</b><br>
-            OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго<br></p>
-        <p><b>Недостатки:</b><br>
-            Плохая ремонтопригодность<br></p>
+                <p><b>Достоинства:</b><br>
+                это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво.
+                довольно шустрое устройство, камера весьма неплохая,ширик тоже на высоте.<br></p>
+                <p><b>Недостатки:</b><br>
+                к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь) а если нужно переносить
+                фото с компа, то это только через itunes, которыйурезает качество фотографий исходное<br></p>
+            </div>
+        </div>
+        <hr>        
+        <div class="review">            
+            <img class="review_photo" src="./img/review-2.jpeg" alt="фотография автора" height="200">
+
+            <div>
+                <h4>Валерий Коваленко</h4>
+                <img src="./img/star-4.png" alt="Оценка 4 звезды" height="30">
+                <p><b>Опыт использования:</b> менее месяца</p>
+
+                <p><b>Достоинства:</b><br>
+                OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго<br></p>
+                <p><b>Недостатки:</b><br>
+                Плохая ремонтопригодность<br></p>
+            </div>
+        </div>
     </main>
     <footer>
-        &#169; ООО «<span style="color:#f52;">Мой</span>Маркет», 2018-2022.Для уточнения информации звоните по
+        &#169; ООО «<span class="logo-orange">Мой</span>Маркет», 2018-2022.Для уточнения информации звоните по
         номеру <a href="tel:79000000000">+7 900 000 0000</a>,а предложения по сотрудничеству отправляйте на почту
         <a href="mailto:partner@mymarket.com">partner@mymarket.com</a><br>
         <a href="#">Наверх</a>

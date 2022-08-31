@@ -1,0 +1,57 @@
+.logo-title {
+    display: inline-block;
+}
+
+.logo-orange {
+    color:#f52;
+}
+
+.review_numb {
+    color: #aaaaaa;
+}
+
+.review_hat {
+    display: inline-block;
+}
+
+body {
+    font-size: 18px;
+    max-width: 1500px;
+    margin: 0 auto;  
+}
+
+a {
+   color: #018ad2;
+   text-decoration: none; 
+}
+
+a:hover {
+    color: #c00;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+p {
+    margin: 16px 0px;
+    line-height: 1.5;
+}
+
+.list {
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+iframe {
+    border: 1px dashed #ccc;    
+}
+
+.review {    
+    display: flex;
+    gap: 16px;
+}
+
+table, th, td {
+    border: 1px solid black
+}    

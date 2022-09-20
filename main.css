@@ -99,10 +99,19 @@
     width: 80px;
     height: 80px;
     border: 1px solid #888888;
-    border-radius: 4px;    
+    border-radius: 4px;
+    cursor: pointer;    
 }
 .color-image__img {
     height: 60px;
+}
+
+.color-image:hover {
+    background: #F2F2F2;
+}
+
+.color_selected {
+    border: 2px solid #F36223;
 }
 
 .configuration__name {    
@@ -118,7 +127,7 @@
     gap: 10px;       
 }
 
-.configuration-button {
+.btn {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -127,7 +136,17 @@
     border: 1px solid #888888;
     border-radius: 4px;
     font-weight: 500;
-    font-size: 16px;      
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;      
+}
+
+.btn:hover {
+    background: #F2F2F2;   
+}
+
+.btn_selected {
+    border: 2px solid #F36223;
 }
 
 .characteristic__name {    
@@ -136,7 +155,7 @@
     margin-top: 0px;    
 }
 
-.characteristic__list div::before {
+.characteristic__list li::before {
     content: " ";
     display: inline-block;
     background: #888888;
@@ -149,11 +168,10 @@
 .characteristic__list {
     display: flex;
     flex-direction: column;
-    gap: 10px;    
-}
-
-.boldtext {
-    font-weight: 700;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;    
 }
 
 .description__name {
@@ -256,7 +274,7 @@
     font-size: 16px;
 }
 
-.price__button {
+.price__btn {
     display: flex;    
     justify-content: center;
     align-items: center;
@@ -265,14 +283,18 @@
     background: #F36223;
     border-radius: 4px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-.price__button-text {
+.price__btn-text {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
 }
 
+.price__btn:hover {
+    background: #DA4A0C;
+}
 
 
 
@@ -289,12 +311,12 @@
 }
 
 a {
-   color: #018ad2;
+   color: #008CF0;
    text-decoration: none; 
 }
 
 a:hover {
-    color: #c00;
+    color: #F36223;
 }
 
 button {

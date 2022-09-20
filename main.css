@@ -29,7 +29,7 @@
     gap: 4px;
     padding: 8px 0px;    
     align-items: center;
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;           
 }
 
@@ -40,7 +40,7 @@
 }
 
 .product {
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     align-items: center;      
     gap: 10px;
@@ -54,7 +54,7 @@
 }
 
 .product__photo {
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     align-items: center;    
     gap: 10px;
@@ -67,11 +67,11 @@
 }
 
 .container {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;    
     display: flex;
     gap: 100px;
-    padding: 30px;
+    margin-top: 30px;
 }
 
 .characteristic_all {
@@ -296,19 +296,87 @@
     background: #DA4A0C;
 }
 
-
-
-
-
-
-
-.review_numb {
-    color: #aaaaaa;
+.rev {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.review_hat {
-    display: inline-block;
+.review-section {
+    max-width: 880px;
 }
+
+.review-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-section__wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.review-section__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.review-section__count {
+    font-weight: 700;
+    font-size: 24px;
+    color: #888888;
+}
+
+.review-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.review {
+    display: flex;
+    gap: 30px;
+}
+
+.review_photo {
+    width: 140px;
+    height: 140px;    
+    border-radius: 100px;
+}
+
+.review__name {
+    margin: 0;    
+    font-size: 20px;
+}
+
+.review__rating {
+    margin-top: 10px;
+}
+
+.review__parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.review__parameter {    
+    font-size: 14px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+.separator {
+    border: 1px solid #888888
+}
+
+
+
 
 a {
    color: #008CF0;
@@ -319,17 +387,8 @@ a:hover {
     color: #F36223;
 }
 
-button {
-    padding: 8px 12px;
-}
-
 iframe {
     border: 1px dashed #ccc;    
-}
-
-.review {    
-    display: flex;
-    gap: 16px;
 }
 
 table, th, td {

@@ -2,7 +2,7 @@
     max-width: 1500px;
     margin: 0 auto;
     font-family: sans-serif;
-    background: #F8FAFE;
+    background: #F8F8F8;
 }
 
 .header {
@@ -191,6 +191,11 @@
     margin-bottom: 0px;
 }
 
+.comparison {
+    display: flex;
+    flex-direction: column;
+}
+
 .comparison__title {
     font-size: 16px;
     font-weight: 700;
@@ -198,7 +203,6 @@
 }
 
 table {
-    width: 100%;
     border: 1px solid #888888;
     border-collapse: collapse;
 }
@@ -399,13 +403,104 @@ tbody tr:hover {
 }
 
 .star {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 }
 
 .separator {
-    border: 1px solid #888888
+    padding: 0px 0px 0px 170px;
 }
+
+.separator__line {
+    border: 1px dashed #888888
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 170px;
+    gap: 15px;
+    margin-top: 60px;
+    max-width: 710px;
+}
+
+.form-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-review {
+    display: flex;
+    gap: 40px;
+}
+
+.form-review__text {
+    padding: 15px 20px;
+    border: 1px solid #888888;
+    width: 580px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.form-review__text:hover {
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.form-review__rating {
+    padding: 15px 20px;
+    border: 1px solid #888888;
+    width: 175px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.form-review__rating:hover {
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.form-area {
+    resize: none;
+    padding: 15px 20px;
+    border: 1px solid #888888;    
+    height: 160px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+.form-area:hover {
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;    
+    background: #F36223;    
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 177px;
+    height: 39px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-btn:hover{
+    background: #DA4A0C;
+}
+
 
 a {
     color: #008CF0;
@@ -422,7 +517,7 @@ iframe {
 
 .footer {
     background: #F2F2F2;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .footer__container {
@@ -431,14 +526,15 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;    
+    padding: 30px 0px;
 }
 
 .footer__info {
     font-size: 14px;
 }
+
 .footer__info p {
-    margin: 0px;    
+    margin: 0px;
 }
 
 .footer__info-orange {

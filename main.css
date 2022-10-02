@@ -2,15 +2,18 @@
     max-width: 1500px;
     margin: 0 auto;
     font-family: sans-serif;
-    background: #F8F8F8;
+    background: #F8F8F8;    
+}
+
+.wrapper__padding {
+    padding: 0px 50px;
 }
 
 .header {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 80px;
-    margin: 0px 50px;
+    height: 80px;    
 }
 
 .header-title {
@@ -28,9 +31,7 @@
     display: flex;
     gap: 4px;
     padding: 8px 0px;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
+    align-items: center;    
 }
 
 .breadcrumbs__link {
@@ -39,12 +40,8 @@
     margin-top: 10px;
 }
 
-.product {
-    max-width: 1400px;
-    /* display: flex; */
-    align-items: center;
-    /* gap: 10px; */
-    margin: 0 auto;
+.product {   
+    align-items: center;    
 }
 
 .product-title {
@@ -54,12 +51,10 @@
     gap: 10px;
 }
 
-.product-photos {
-    max-width: 1400px;
-    display: flex;
-    align-items: center;
+.product-photos {    
+    display: flex;    
     gap: 10px;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .product-img {
@@ -67,12 +62,7 @@
     margin-top: 30px;
 }
 
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.container_flex {
+.wrapper__flex {
     display: flex;
     gap: 100px;
     margin-top: 30px;
@@ -539,4 +529,69 @@ iframe {
 
 .footer__info-orange {
     color: #FF5722;
+}
+
+@media (max-width: 1499px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+
+    .wrapper__padding {
+        padding: 0px 15px;
+    }
+
+    .product-img {
+        height: 272px;
+    }
+
+    .comparison {
+        display: none;
+    }
+
+    .form-block {
+        padding: 0px;
+    }
+
+    .wrapper__flex {
+        gap: 40px;
+        margin-bottom: 44px;
+    }   
+
+    .review {
+        max-width: 594px;
+    }
+
+    .separator {
+        padding: 0px 0px 0px 130px;
+    }
+
+    .form-block {
+        max-width: 594px;
+    }
+
+    .advertising__frame {
+        width: 360px;
+    }
+    
+    .review-block__photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .star {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer {
+        margin-top: 80px;        
+    }
+
+    .footer__container {
+        max-width: 994px;
+    }
+
+    .form-review__text {
+        width: 439px;
+    }
 }

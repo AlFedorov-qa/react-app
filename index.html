@@ -210,7 +210,6 @@
                             <h3 class="review-header__title">Отзывы</h3>
                             <span class="review-header__count">425</span>
                         </div>
-                        <button class="btn">Добавить отзыв</button>
                     </div>
 
                     <div class="review-section">
@@ -253,7 +252,9 @@
                             </div>
                         </div>
 
-                        <div class="separator"></div>
+                        <div class="separator">
+                            <div class="separator__line"></div>
+                        </div>
 
                         <div class="review-block">
                             <img src="./img/review-2.jpeg" class="review-block__photo" alt="фотография автора">
@@ -288,6 +289,20 @@
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section class="form-block">
+                    <h4 class="form-title">Добавить свой отзыв</h4>
+                    <form class="form">
+                        <div class="form-review">
+                            <input type="text" name="name-last-name" placeholder="Имя и фамилия"
+                                class="form-review__text">
+                            <input type="number" name="rating" placeholder="Оценка" min="1" max="5"
+                                class="form-review__rating">
+                        </div>
+                        <textarea name="text" placeholder="Текст отзыва" class="form-area"></textarea>                        
+                        <button type="submit" class="form-btn">Отправить отзыв</button>
+                    </form>
                 </section>
             </div>
         </main>

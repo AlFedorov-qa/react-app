@@ -97,6 +97,7 @@
     border: 1px solid #888888;
     border-radius: 4px;
     cursor: pointer;
+    background: transparent;
 }
 
 .characteristics-color__image>img {
@@ -109,6 +110,11 @@
 
 .selected {
     border: 2px solid #F36223;
+}
+
+.characteristics-color__image:focus:active {
+    border: 2px solid #A93A09;
+    border-radius: 4px;
 }
 
 .configuration__name {
@@ -144,6 +150,11 @@
 
 .btn_selected {
     border: 2px solid #F36223;
+}
+
+.btn:focus:active {
+    border: 2px solid #A93A09;
+    border-radius: 4px;
 }
 
 .characteristic__name {
@@ -260,10 +271,15 @@ tbody tr:hover {
     gap: 10px;
 }
 
+.price-block {
+    display: flex;    
+    justify-content: space-between;
+}
+
 .price-old {
     display: flex;
-    align-items: center;
     gap: 10px;
+    align-items: center;
 }
 
 .price-old__text {
@@ -289,6 +305,22 @@ tbody tr:hover {
     color: #FFFFFF;
 }
 
+.price-heart {
+    border: none;
+    cursor: pointer;    
+    width: 30px;
+    height: 30px;
+    background: no-repeat center/80% url("./img/heart.svg");    
+}
+
+.price-heart:hover {    
+    background-image: url("./img/heart-hover.svg");
+}
+
+.price-heart:focus:active {
+    background-image: url("./img/heart-active.svg");
+}    
+
 .price-new {
     font-weight: 500;
     font-size: 32px;
@@ -310,21 +342,33 @@ tbody tr:hover {
     justify-content: center;
     align-items: center;
     padding: 20px 49px;
-    gap: 10px;
+    gap: 15px;
     background: #F36223;
     border-radius: 4px;
     margin-top: 20px;
-    cursor: pointer;
-}
-
-.price-btn__text {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.price-btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .price-btn:hover {
     background: #DA4A0C;
+}
+
+.price-btn:focus:active {
+    background: #A93A09;
 }
 
 .review {
@@ -491,6 +535,10 @@ tbody tr:hover {
     background: #DA4A0C;
 }
 
+.form-btn:focus:active {
+    background: #A93A09;
+}
+
 
 a {
     color: #008CF0;
@@ -499,6 +547,10 @@ a {
 
 a:hover {
     color: #F36223;
+}
+
+a:focus:active {
+    color: #A93A09;
 }
 
 iframe {

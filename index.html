@@ -11,14 +11,14 @@
 
 <body>
     <div class="wrapper">
-        <div class="wrapper__padding">
-            <header>
-                <div class="header">
-                    <img class="logo" src="./img/favicon.svg" alt="логотип">
-                    <h1 class="header-title"><span class="header-title__orange">Мой</span>Маркет</h1>
-                </div>
-            </header>
+        <header>
+            <div class="header">
+                <img class="logo" src="./img/favicon.svg" alt="логотип">
+                <h1 class="header-title"><span class="header-title__orange">Мой</span>Маркет</h1>
+            </div>
+        </header>
 
+        <div class="wrapper__padding">
             <nav class="breadcrumbs">
                 <div class="breadcrumbs__link">
                     <a href="#">Электроника</a>
@@ -47,33 +47,60 @@
                         <div class="characteristics-color">
                             <h3 class="characteristics-color__name"> Цвет товара: cиний</h3>
                             <div class="characteristics-color__list">
-                                <button class="characteristics-color__image">
-                                    <img src="./img/color-1.webp" alt="Красный">
-                                </button>
-                                <button class="characteristics-color__image">
-                                    <img src="./img/color-2.webp" alt="Зеленый">
-                                </button>
-                                <button class="characteristics-color__image">
-                                    <img src="./img/color-3.webp" alt="Розовый">
-                                </button>
-                                <button class="characteristics-color__image selected">
-                                    <img src="./img/color-4.webp" alt="Синий">
-                                </button>
-                                <button class="characteristics-color__image">
-                                    <img src="./img/color-5.webp" alt="Белый">
-                                </button>
-                                <button class="characteristics-color__image">
-                                    <img src="./img/color-6.webp" alt="Черный">
-                                </button>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-1.webp" alt="Красный">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-2.webp" alt="Зеленый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-3.webp" alt="Розовый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-4.webp" alt="Синий">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-5.webp" alt="Белый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-6.webp" alt="Черный">
+                                    </div>
+                                </label>
                             </div>
                         </div>
 
                         <div class="configuration">
                             <h3 class="configuration__name">Конфигурация памяти: 128 ГБ</h3>
                             <div class="configuration__list">
-                                <button class="btn btn_selected">126 ГБ</button>
-                                <button class="btn">256 ГБ</button>
-                                <button class="btn">512 ГБ</button>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">126 ГБ</div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">256 ГБ</div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">512 ГБ</div>
+                                </label>
                             </div>
                         </div>
 

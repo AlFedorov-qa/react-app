@@ -9,11 +9,12 @@
     padding: 0px 50px;
 }
 
-.header {
+.header {    
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 80px;    
+    height: 80px;
+    padding: 0px 50px;    
 }
 
 .header-title {
@@ -27,11 +28,11 @@
     color: #FF5722;
 }
 
-.breadcrumbs {
+.breadcrumbs {    
     display: flex;
     gap: 4px;
     padding: 8px 0px;
-    align-items: center;    
+    align-items: center;       
 }
 
 .breadcrumbs__link {
@@ -96,25 +97,28 @@
     height: 80px;
     border: 1px solid #888888;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer;    
     background: transparent;
 }
 
 .characteristics-color__image>img {
-    height: 60px;
+    height: 60px;    
 }
 
-.characteristics-color__image:hover {
+input {
+    display: none;
+}
+
+input[type=radio]:checked + .characteristics-color__image {
+    border: 2px solid #F36223;    
+}
+
+input[type=radio]:active + .characteristics-color__image {
+    border: 2px solid #A93A09;    
+}
+
+input[type=radio]:hover + .characteristics-color__image {
     background: #F2F2F2;
-}
-
-.selected {
-    border: 2px solid #F36223;
-}
-
-.characteristics-color__image:focus:active {
-    border: 2px solid #A93A09;
-    border-radius: 4px;
 }
 
 .configuration__name {
@@ -134,27 +138,25 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px 20px;
-    gap: 10px;
+    padding: 8px 20px;    
     border: 1px solid #888888;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     background: transparent;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.btn:hover {
-    background: #F2F2F2;
-}
-
-.btn_selected {
+input[type=radio]:checked + .btn {
     border: 2px solid #F36223;
 }
 
-.btn:focus:active {
-    border: 2px solid #A93A09;
-    border-radius: 4px;
+input[type=radio]:active + .btn {
+    border: 2px solid #A93A09;    
+}
+
+input[type=radio]:hover + .btn {
+    background: #F2F2F2;
 }
 
 .characteristic__name {
@@ -589,6 +591,10 @@ iframe {
     }
 
     .wrapper__padding {
+        padding: 0px 15px;
+    }
+
+    .header {
         padding: 0px 15px;
     }
 

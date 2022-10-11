@@ -11,14 +11,14 @@
 
 <body>
     <div class="wrapper">
-        <div class="wrapper__padding">
-            <header>
-                <div class="header">
-                    <img class="logo" src="./img/favicon.svg" alt="логотип">
-                    <h1 class="header-title"><span class="header-title__orange">Мой</span>Маркет</h1>
-                </div>
-            </header>
+        <header>
+            <div class="header">
+                <img class="logo" src="./img/favicon.svg" alt="логотип">
+                <h1 class="header-title"><span class="header-title__orange">Мой</span>Маркет</h1>
+            </div>
+        </header>
 
+        <div class="wrapper__padding">
             <nav class="breadcrumbs">
                 <div class="breadcrumbs__link">
                     <a href="#">Электроника</a>
@@ -47,33 +47,60 @@
                         <div class="characteristics-color">
                             <h3 class="characteristics-color__name"> Цвет товара: cиний</h3>
                             <div class="characteristics-color__list">
-                                <div class="characteristics-color__image">
-                                    <img src="./img/color-1.webp" alt="Красный">
-                                </div>
-                                <div class="characteristics-color__image">
-                                    <img src="./img/color-2.webp" alt="Зеленый">
-                                </div>
-                                <div class="characteristics-color__image">
-                                    <img src="./img/color-3.webp" alt="Розовый">
-                                </div>
-                                <div class="characteristics-color__image selected">
-                                    <img src="./img/color-4.webp" alt="Синий">
-                                </div>
-                                <div class="characteristics-color__image">
-                                    <img src="./img/color-5.webp" alt="Белый">
-                                </div>
-                                <div class="characteristics-color__image">
-                                    <img src="./img/color-6.webp" alt="Черный">
-                                </div>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-1.webp" alt="Красный">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-2.webp" alt="Зеленый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-3.webp" alt="Розовый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-4.webp" alt="Синий">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-5.webp" alt="Белый">
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="foto">
+                                    <div class="characteristics-color__image">
+                                        <img src="./img/color-6.webp" alt="Черный">
+                                    </div>
+                                </label>
                             </div>
                         </div>
 
                         <div class="configuration">
                             <h3 class="configuration__name">Конфигурация памяти: 128 ГБ</h3>
                             <div class="configuration__list">
-                                <button class="btn btn_selected">126 ГБ</button>
-                                <button class="btn">256 ГБ</button>
-                                <button class="btn">512 ГБ</button>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">126 ГБ</div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">256 ГБ</div>
+                                </label>
+                                <label>
+                                    <input type="radio" checked name="memory">
+                                    <div class="btn">512 ГБ</div>
+                                </label>
                             </div>
                         </div>
 
@@ -85,8 +112,7 @@
                                 <li>Операционная система: <b>iOS 15</b></li>
                                 <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
                                 <li>Процессор:<b><a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Appel
-                                            A15
-                                            Bionic</a></b></li>
+                                            A15 Bionic</a></b></li>
                                 <li>Вес: <b>173 г</b></li>
                             </ul>
                         </div>
@@ -185,11 +211,14 @@
                     <div class="advertising">
                         <div class="price">
                             <div class="price-product">
-                                <div class="price-old">
-                                    <div class="price-old__text"> 75 990₽</div>
-                                    <div class="price-discount">
-                                        <div class="price-discount__text">-8%</div>
+                                <div class="price-block">
+                                    <div class="price-old">
+                                        <div class="price-old__text"> 75 990₽</div>
+                                        <div class="price-discount">
+                                            <div class="price-discount__text">-8%</div>
+                                        </div>
                                     </div>
+                                    <button class="price-heart"></button>
                                 </div>
                                 <div class="price-new">67 990₽</div>
                             </div>
@@ -197,9 +226,7 @@
                                 <div class="delivery__text">Самовывоз в четверг, 1 сентября — <b>бесплатно</b></div>
                                 <div class="delivery__text">Курьером в четверг, 1 сентября — <b>бесплатно</b></div>
                             </div>
-                            <div class="price-btn">
-                                <div class="price-btn__text">Добавить в корзину</div>
-                            </div>
+                            <button class="price-btn">Добавить в корзину</button>
                         </div>
                         <div class="advertising-block">
                             <div class="advertising__name">Реклама</div>

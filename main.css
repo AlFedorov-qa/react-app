@@ -9,7 +9,7 @@
     padding: 0px 50px;
 }
 
-.header {
+.header {    
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #010541;
@@ -146,12 +146,12 @@
     height: 80px;
     border: 1px solid #888888;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer;    
     background: transparent;
 }
 
 .characteristics-color__image>img {
-    height: 60px;
+    height: 60px;    
 }
 
 .characteristics-color__list input {
@@ -193,7 +193,7 @@ input[type=radio]:hover + .characteristics-color__image {
     font-weight: 500;
     font-size: 16px;
     background: transparent;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .configuration__list input {

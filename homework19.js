@@ -29,7 +29,7 @@ if (age < 4) {
     alert(`Вам ${age} лет и вы познаёте жизнь`)
 }else if (age < 81) {
     alert(`Вам ${age} лет и вы познали жизнь`)
-}else if (age > 81) {
+}else if (age > 80) {
     alert(`Вам ${age} лет и вы долгожитель`)
 }
 

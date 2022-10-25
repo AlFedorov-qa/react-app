@@ -12,14 +12,17 @@ for (let i = 0; i < 3; i++) {
 
     if (isNaN(number)) {
         alert("Ошибка, выввели не число");
-        break;
+        break;        
     }
 
     if (number) {
-        sum += number;   
+        sum += number;        
     }
 }
-alert("Сумма: " + sum);
+if (sum) {
+    alert("Сумма: " + sum);
+}
+
 
 
 

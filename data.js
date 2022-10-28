@@ -2,8 +2,26 @@
 
 let product = {
     name: "iPhone 13",
-    color: "cиний",
-    configuration: "128 ГБ",
+    productPhotos: [
+        "./img/image-1.webp",
+        "./img/image-2.webp",
+        "./img/image-3.webp",
+        "./img/image-4.webp",
+        "./img/image-5.webp"
+    ],
+    color: [
+        "./img/color-1.webp",
+        "./img/color-2.webp",
+        "./img/color-3.webp",
+        "./img/color-4.webp",
+        "./img/color-5.webp",
+        "./img/color-6.webp"
+    ],
+    configuration: [
+        '128 ГБ',
+        '256 ГБ',
+        '512 ГБ'
+    ],
     characteristic:`
     Экран: 6.1
     Встроенная память: 128 ГБ
@@ -37,14 +55,18 @@ let product = {
     который появился в кадре. Теперь ваши видео будут смотретьсякак настоящее кино.    
     `,
 
-    priceInRubles: "67 990₽",    
-    discount: "-8%",
-    priceOld: "75 990₽"    
-}
+    priceInRubles: "67 990",    
+    discount: "-8",
+    priceOld: "75 990",
+    delivery: [
+        {name:'Самовывоз', date:'четверг, 1 сентября', cost:0},
+        {name:'Курьером', date:'четверг, 1 сентября', cost:0}
+    ]
+};
 
 let review1 = {
     foto: "./img/review-1.jpeg",
-    name: Марк,
+    name: "Марк Г.",
     rating: 5,
     text:`
     Опыт использования: менее месяца
@@ -59,11 +81,11 @@ let review1 = {
     андроида - адскаявещь) а если нужно переносить фото с компа, то 
     это только через itunes, которыйурезает качество фотографий исходное
     `
-}
+};
 
 let review2 = {
     foto: "./img/review-2.jpeg",
-    name: Валерий,
+    name: "Валерий Коваленко",
     rating: 4,
     text:`
     Опыт использования: менее месяца
@@ -74,4 +96,4 @@ let review2 = {
     Недостатки:
     Плохая ремонтопригодность
     `
-}
+};

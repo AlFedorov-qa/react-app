@@ -6,8 +6,8 @@
     <link rel="icon" href="./img/favicon.ico" sizes="any">
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
-    <link rel="stylesheet" href="./main.css">    
-    <script src="./homework23.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./page-product.js"></script>
 </head>
 
 <body>
@@ -339,11 +339,15 @@
                     <section class="form-block">
                         <h4 class="form-title">Добавить свой отзыв</h4>
                         <form class="form">
-                            <div class="form-review">
-                                <input type="text" name="name-last-name" placeholder="Имя и фамилия"
-                                    class="form-review__text">
-                                <input type="number" name="rating" placeholder="Оценка" min="1" max="5"
-                                    class="form-review__rating">
+                            <div class="form-cont">
+                                <div class="form-name">
+                                    <input type="text" name="name" placeholder="Имя и фамилия" class="input-name">
+                                    <div class="error-name"></div>
+                                </div>
+                                <div class="form-rating">
+                                    <input type="number" name="rating" placeholder="Оценка" class="input-rating">
+                                    <div class="error-rating"></div>
+                                </div>
                             </div>
                             <textarea name="text" placeholder="Текст отзыва" class="form-area"></textarea>
                             <button type="submit" class="form-btn">Отправить отзыв</button>

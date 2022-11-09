@@ -520,39 +520,65 @@ tbody tr:hover {
 
 .form {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column;    
 }
 
-.form-review {
+.form-cont {
     display: flex;
     gap: 40px;
 }
 
-.form-review__text {
+.input-name {
     padding: 15px 20px;
     border: 1px solid #888888;
-    width: 580px;
+    width: 451px;
     font-size: 16px;
     background: transparent;
 }
 
-.form-review__text:hover {
+.input-name:hover {
     border: 1px solid #000000;
     cursor: pointer;
 }
 
-.form-review__rating {
+.error-name {
+    visibility: hidden;
+    display: flex;
+    background: #DA4A0C;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    height: 13px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.error-name.visible {
+    visibility: visible;
+}
+
+.input-rating {
     padding: 15px 20px;
     border: 1px solid #888888;
-    width: 175px;
+    width: 135px;
     font-size: 16px;
     background: transparent;
 }
 
-.form-review__rating:hover {
+.input-rating:hover {
     border: 1px solid #000000;
     cursor: pointer;
+}
+
+.error-rating {
+    visibility: hidden;
+    background: #DA4A0C;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.error-rating.visible {
+    visibility: visible;
 }
 
 .form-area {
@@ -583,6 +609,7 @@ tbody tr:hover {
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    margin-top: 30px;
 }
 
 .form-btn:hover{
@@ -706,7 +733,7 @@ iframe {
         max-width: 994px;
     }
 
-    .form-review__text {
-        width: 439px;
+    .input-name {
+        width: 335px;
     }
 }

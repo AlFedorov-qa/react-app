@@ -7,13 +7,13 @@ let inputRatingBlock = form.querySelector(".form-rating");
 
 let inputName = inputNameBlock.querySelector(".input-name");
 let inputRating = inputRatingBlock.querySelector(".input-rating");
+let inputArea = form.querySelector(".form-area");
 
 let errorElemName = inputNameBlock.querySelector(".error-name")
 let errorElemRating = inputRatingBlock.querySelector(".error-rating")
 
 function handleSubmit (event) {
-    event.preventDefault();
-    console.log("Sumbit");
+    event.preventDefault();    
 
     let name = inputName.value;
     let rating = inputRating.value;
@@ -45,6 +45,27 @@ function handleSubmit (event) {
  
     errorElemRating.innerText = errorRating;
     errorElemRating.classList.toggle("visible", errorRating);
+
+   localStorage.removeItem("name");
+   localStorage.removeItem("rating");
+   localStorage.removeItem("text");   
+   
+   console.log("Sumbit");
 }
 
+function handleInput(event) {
+    let name = event.target.getAttribute("name");
+    let rating = event.target.getAttribute("rating");
+    let text = event.target.getAttribute("text");
+
+    localStorage.setItem(name, event.target.value);
+    localStorage.setItem(rating, event.target.value);
+    localStorage.setItem(text, event.target.value);
+}
+
+inputName.value = localStorage.getItem("name");
+inputRating.value = localStorage.getItem("rating");
+inputArea.value = localStorage.getItem("text");
+
 form.addEventListener("submit", handleSubmit);
+window.addEventListener("input", handleInput);

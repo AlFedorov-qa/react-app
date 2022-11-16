@@ -19,15 +19,19 @@ function handleSubmit (event) {
     let rating = inputRating.value;
 
     let errorName = "";
+    
+    let isNameError = name.length === 0;
+    let isNameError1 = name.length < 2;
+
             
-    if (name.length === 0) {
+    if (isNameError) {
         errorName = "Вы забыли указать имя и фамилию";
-        inputName.style.borderColor = "#DA4A0C";
-    } else if (name.length < 2) {
+        inputName.style.borderColor = "#DA4A0C";        
+    } else if (isNameError1) {
         errorName = "Имя не может быть короче 2-х символов";
-        inputName.style.borderColor = "#DA4A0C";
+        inputName.style.borderColor = "#DA4A0C";        
     } else {
-        inputName.style.borderColor = "#888888";
+        inputName.style.borderColor = "#888888";        
     }
 
     errorElemName.innerText = errorName;
@@ -36,7 +40,9 @@ function handleSubmit (event) {
 
     let errorRating = "";
 
-    if (rating < 1 || rating > 5) {
+    let isRatingError = rating < 1 || rating > 5;
+
+    if (isRatingError) {
         errorRating = "Оценка должна быть от 1 до 5";
         inputRating.style.borderColor = "#DA4A0C";
     } else {
@@ -46,10 +52,12 @@ function handleSubmit (event) {
     errorElemRating.innerText = errorRating;
     errorElemRating.classList.toggle("visible", errorRating);
 
-   localStorage.removeItem("name");
-   localStorage.removeItem("rating");
-   localStorage.removeItem("text");   
-   
+    if (!isNameError && !isNameError1 && !isRatingError) {
+        localStorage.removeItem("name");
+        localStorage.removeItem("rating");
+        localStorage.removeItem("text"); 
+    }
+
    console.log("Sumbit");
 }
 
@@ -69,3 +77,39 @@ inputArea.value = localStorage.getItem("text");
 
 form.addEventListener("submit", handleSubmit);
 window.addEventListener("input", handleInput);
+
+let counter = document.querySelector(".counter__text");
+counter.textContent = "0";
+let choiseButton = document.querySelector(".price-btn");
+
+
+console.log(choiseButton);
+
+function handleClick (event) {
+    event.preventDefault();
+
+    if (+counter.textContent === 0) {        
+        counter.textContent = "1";
+        choiseButton.textContent = "Товар уже в корзине";
+        choiseButton.style.backgroundColor = "#888888";
+    } else {        
+        counter.textContent = "0";
+        choiseButton.textContent = "Добавить в корзину";
+        choiseButton.style.backgroundColor = "#F36223";
+        return;
+    }
+}
+
+function handleClickSave () {
+    localStorage.setItem("counter", counter.textContent);
+    localStorage.setItem("button", choiseButton.style.backgroundColor);    
+    localStorage.setItem("textButton", choiseButton.textContent);
+}
+
+counter.textContent = localStorage.getItem("counter");
+choiseButton.style.backgroundColor = localStorage.getItem("button");
+choiseButton.textContent = localStorage.getItem("textButton");
+
+
+choiseButton.addEventListener("click", handleClick);
+choiseButton.addEventListener("click", handleClickSave);

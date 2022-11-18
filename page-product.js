@@ -77,3 +77,39 @@ inputArea.value = localStorage.getItem("text");
 
 form.addEventListener("submit", handleSubmit);
 window.addEventListener("input", handleInput);
+
+let counter = document.querySelector(".counter__text");
+counter.textContent = "0";
+let choiseButton = document.querySelector(".price-btn");
+
+
+console.log(choiseButton);
+
+function handleClick (event) {
+    event.preventDefault();
+
+    if (+counter.textContent === 0) {        
+        counter.textContent = "1";
+        choiseButton.textContent = "Товар уже в корзине";
+        choiseButton.style.backgroundColor = "#888888";
+    } else {        
+        counter.textContent = "0";
+        choiseButton.textContent = "Добавить в корзину";
+        choiseButton.style.backgroundColor = "#F36223";
+        return;
+    }
+}
+
+function handleClickSave () {
+    localStorage.setItem("counter", counter.textContent);
+    localStorage.setItem("button", choiseButton.style.backgroundColor);    
+    localStorage.setItem("textButton", choiseButton.textContent);
+}
+
+counter.textContent = localStorage.getItem("counter");
+choiseButton.style.backgroundColor = localStorage.getItem("button");
+choiseButton.textContent = localStorage.getItem("textButton");
+
+
+choiseButton.addEventListener("click", handleClick);
+choiseButton.addEventListener("click", handleClickSave);

@@ -6,7 +6,7 @@ class AddReviewForm {
     }
 }
 
-class Form extends AddReviewForm {
+class AddReviewFor extends Form {
 
     constructor(
         formSelector,
@@ -125,9 +125,9 @@ class Form extends AddReviewForm {
 
 }
 
-let review = new AddReviewForm(
+let review = new Form (
     '.form',
-    '..input-name',
+    '.input-name',
     '.input-rating',
     '.form-area',
     '.error-name',

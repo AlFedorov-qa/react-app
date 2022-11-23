@@ -1,4 +1,7 @@
 import './PageProduct.css';
+import Color from '../Colors/Color';
+import Config from '../Configs/Config';
+import Review from '../Reviews/Review';
 
 
 function PageProduct() {
@@ -47,62 +50,12 @@ function PageProduct() {
                         <div className="characteristics">
                             <div className="characteristics-color">
                                 <h3 className="characteristics-color__name"> Цвет товара: cиний</h3>
-                                <div className="characteristics-color__list">
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-1.webp" alt="Красный" />
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-2.webp" alt="Зеленый" />
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-3.webp" alt="Розовый" />
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-4.webp" alt="Синий" />
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-5.webp" alt="Белый" />
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="foto" />
-                                        <div className="characteristics-color__image">
-                                            <img src="./img/color-6.webp" alt="Черный" />
-                                        </div>
-                                    </label>
-                                </div>
+                                <Color />
                             </div>
 
                             <div className="configuration">
                                 <h3 className="configuration__name">Конфигурация памяти: 128 ГБ</h3>
-                                <div className="configuration__list">
-                                    <label>
-                                        <input type="radio" checked name="memory" />
-                                        <div className="btn">128 ГБ</div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="memory" />
-                                        <div className="btn">256 ГБ</div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked name="memory" />
-                                        <div className="btn">512 ГБ</div>
-                                    </label>
-                                </div>
+                                <Config />                               
                             </div>
 
                             <div className="characteristic">
@@ -246,83 +199,7 @@ function PageProduct() {
                                     <span className="review-header__count">425</span>
                                 </div>
                             </div>
-
-                            <div className="review-section">
-                                <div className="review-block">
-                                    <img src="./img/review-1.jpeg" className="review-block__photo" alt="фотография автора" />
-
-                                    <div className="review-content">
-                                        <h4 className="review-content__name">Марк Г.</h4>
-                                        <div className="review-content__rating">
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                        </div>
-
-                                        <div className="review-options">
-                                            <div className="review-options__point"><b>Опыт использования:</b> менее месяца</div>
-
-                                            <div className="review-options__point">
-                                                <div>
-                                                    <b>Достоинства:</b>
-                                                </div>
-                                                это мой первый айфон после после огромного количества телефонов на андроиде.
-                                                всёплавно, чётко и красиво.довольно шустрое устройство, камера весьма
-                                                неплохая,ширик тоже
-                                                на высоте.
-                                            </div>
-
-                                            <div className="review-options__point">
-                                                <div>
-                                                    <b>Недостатки:</b>
-                                                </div>
-                                                к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь)
-                                                а если нужно переносить фото с компа, то это только через itunes, который урезает
-                                                качество фотографий исходное
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="separator">
-                                    <div className="separator__line"></div>
-                                </div>
-
-                                <div className="review-block">
-                                    <img src="./img/review-2.jpeg" className="review-block__photo" alt="фотография автора" />
-
-                                    <div className="review-content">
-                                        <h4 className="review-content__name">Валерий Коваленко</h4>
-                                        <div className="review-content__rating">
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-g.svg" className="star" alt="звезда" />
-                                            <img src="./img/star-b.svg" className="star" alt="звезда" />
-                                        </div>
-
-                                        <div className="review-options">
-                                            <div className="review-options__point"><b>Опыт использования:</b> менее месяца</div>
-
-                                            <div className="review-options__point">
-                                                <div>
-                                                    <b>Достоинства:</b>
-                                                </div>
-                                                OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
-                                            </div>
-
-                                            <div className="review-options__point">
-                                                <div>
-                                                    <b>Недостатки:</b>
-                                                </div>
-                                                Плохая ремонтопригодность
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Review />                            
                         </section>
 
                         <section className="form-block">

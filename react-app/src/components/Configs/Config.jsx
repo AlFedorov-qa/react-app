@@ -5,7 +5,7 @@ function config() {
     return (
         <div className="configuration__list">
             {Configs.map((config) => (
-                <label>
+                <label key={config.memory}>
                     <input type="radio" checked name="memory" />
                     <div className="btn">{config.memory}</div>
                 </label>

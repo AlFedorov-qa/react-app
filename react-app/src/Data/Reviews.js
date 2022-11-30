@@ -1,5 +1,6 @@
 const users = [
     {
+        id: 1,
         photo: './img/review-1.jpeg',
         name: 'Марк Г.',
         rating: 5,
@@ -9,6 +10,7 @@ const users = [
         separator: "separator__line",
     },
     {
+        id: 2,
         photo:'./img/review-2.jpeg',
         name: 'Валерий Коваленко',
         rating: 4,

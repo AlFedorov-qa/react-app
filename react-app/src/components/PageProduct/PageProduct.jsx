@@ -185,8 +185,8 @@ function PageProduct() {
                             <div className="advertising-block">
                                 <div className="advertising__name">Реклама</div>
                                 <div className="advertising__list">
-                                    <iframe src="./advertising.html" class="advertising__frame"></iframe>
-                                    <iframe src="./advertising.html" class="advertising__frame"></iframe>
+                                    <iframe src="./advertising.html" className="advertising__frame"></iframe>
+                                    <iframe src="./advertising.html" className="advertising__frame"></iframe>
                                 </div>
                             </div>
                         </div>

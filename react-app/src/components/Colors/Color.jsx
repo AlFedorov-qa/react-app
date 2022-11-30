@@ -5,7 +5,7 @@ function color() {
     return (
         <div className="characteristics-color__list">
             {Colors.map((color) => (
-                <label>
+                <label key={color.img}>
                     <input type="radio" checked name="foto" />
                     <div className="characteristics-color__image">
                         <img src={color.img} alt={color.alt} />

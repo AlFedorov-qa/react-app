@@ -1,4 +1,4 @@
-import users from '../../Data/Reviews';
+import users from '../Data/Reviews';
 import './Review.css';
 
 function user() {
@@ -8,15 +8,15 @@ function user() {
 
         <div>
             {users.map((user) => (
-                <div className="review-section">
+                <div className="review-section" key={user.id}>
                     <div className="review-block">
                         < img src={user.photo} className="review-block__photo" alt="фотография автора" />
                         <div className="review-content">
                             <h4 className="review-content__name">{user.name}</h4>
                             <div className="review-content__rating">
                                 {ratingArray.map((_, index) => (index + 1 <= user.rating) ?
-                                    (<img src="./img/star-g.svg" className="star" alt="звезда" />) :
-                                    (<img src="./img/star-b.svg" className="star" alt="звезда" />)
+                                    (<img key={index} src="./img/star-g.svg" className="star" alt="звезда" />) :
+                                    (<img key={index} src="./img/star-b.svg" className="star" alt="звезда" />)
                                 )}
                             </div>
                             <div className="review-options">
@@ -41,7 +41,7 @@ function user() {
                     <div className="separator">
                         <div className={user.separator}></div>
                     </div>
-                </div>
+                </div>                
             ))}
         </div>
     );

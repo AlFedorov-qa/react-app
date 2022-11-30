@@ -1,4 +1,4 @@
-const configs = [
+const configurations = [
     {
         memory: '128 ГБ'
     },
@@ -10,4 +10,4 @@ const configs = [
     }
 ]
 
-export default configs;
+export default configurations;

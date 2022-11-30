@@ -1,0 +1,36 @@
+.comparison {
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+table {
+    border: 1px solid #888888;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #888888;
+    padding: 10px;
+}
+
+td {
+    border-right: 1px solid #888888;
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+}
+
+@media (max-width: 1499px) {
+    .comparison {
+        display: none;
+    }
+}

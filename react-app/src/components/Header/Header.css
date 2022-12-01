@@ -26,6 +26,10 @@
     color: #FF5722;
 }
 
+.header-title__black {
+    color: #000000;
+}
+
 .header-basket {
     padding-right: 15px;
     padding-top: 15px;

@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Saidbar from '../Saidbar/Saidbar';
 import Form from '../Form/Form';
+import Image from '../Image/Image';
 
 
 function PageProduct() {
@@ -31,13 +32,7 @@ function PageProduct() {
                 </nav>
                 <div className="product">
                     <h1 className="product-title">Смартфон Apple iPhone 13, синий</h1>
-                    <div className="product-photos">
-                        <img src="./img/image-1.webp" className="product-img" alt="Первая картинка" />
-                        <img src="./img/image-2.webp" className="product-img" alt="Вторая картинка" />
-                        <img src="./img/image-3.webp" className="product-img" alt="Третья картинка" />
-                        <img src="./img/image-4.webp" className="product-img" alt="Четвертая картинка" />
-                        <img src="./img/image-5.webp" className="product-img" alt="Пятая картинка" />
-                    </div>
+                    <Image />
                 </div>
                 <main>
                     <div className="wrapper__flex">

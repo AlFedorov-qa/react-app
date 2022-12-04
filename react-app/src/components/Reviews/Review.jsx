@@ -41,7 +41,7 @@ function user() {
                     <div className="separator">
                         <div className={user.separator}></div>
                     </div>
-                </div>                
+                </div>
             ))}
         </div>
     );

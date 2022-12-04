@@ -2,7 +2,7 @@
     max-width: 1500px;
     margin: 0 auto;
     font-family: sans-serif;
-    background: #F8F8F8;    
+    background: #F8F8F8;
 }
 
 .page {
@@ -15,7 +15,7 @@
 }
 
 a {
-    color:#018ad2 ;
+    color: #018ad2;
     text-decoration: none;
 }
 
@@ -31,8 +31,22 @@ a:active {
     padding-top: 20px;
 }
 
-@media (max-width: 1499px) {
+.product {
+    font-size: 17px;
+    line-height: 17px;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1499px) {
     .wrapper {
         max-width: 1024px;
     }
+}
+
+@media (min-width: 360px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 360px;
+    }
+
+    .page {}
 }

@@ -13,14 +13,14 @@ function IndexPage() {
 
             <div className="page">
                 <div>
-                Здесь должно быть содержимое главной страницы
+                Здесь должно быть содержимое главной страницы.
                 <br />
                 Но в рамках курса главная страница используется лишь
                 <br />
                 в демонстрационных целях
                 </div>
                 <div className="link">
-                    <Link to="/product">Перейти на страницу товара</Link>
+                    <Link to="/product"><div className="product">Перейти на страницу товара</div></Link>
                 </div>
 
             </div>

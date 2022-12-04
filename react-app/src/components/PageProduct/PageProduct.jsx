@@ -22,11 +22,11 @@ function PageProduct() {
                 <nav className="breadcrumbs">
                     <div className="breadcrumbs__link">
                         <a href="#">Электроника</a>
-                        <span>{'>'}</span>
+                        <span>{' > '}</span>
                         <a href="#">Смартфоны и гаджеты</a>
-                        <span>{'>'}</span>
+                        <span>{' > '}</span>
                         <a href="#">Мобильные телефоны</a>
-                        <span>{'>'}</span>
+                        <span>{' > '}</span>
                         <a href="#">Apple</a>
                     </div>
                 </nav>

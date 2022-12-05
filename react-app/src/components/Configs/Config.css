@@ -1,0 +1,35 @@
+.configuration__list {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 20px;    
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;    
+}
+
+.configuration__list input {
+    display: none;
+}
+
+input[type=radio]:checked + .btn {
+    border: 2px solid #F36223;
+}
+
+input[type=radio]:active + .btn {
+    border: 2px solid #A93A09;    
+}
+
+input[type=radio]:hover + .btn {
+    background: #F2F2F2;
+}

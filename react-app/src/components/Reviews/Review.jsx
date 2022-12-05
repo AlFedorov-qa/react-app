@@ -1,4 +1,4 @@
-import users from '../../Data/Reviews';
+import users from '../Data/Reviews';
 import './Review.css';
 
 function user() {
@@ -41,7 +41,7 @@ function user() {
                     <div className="separator">
                         <div className={user.separator}></div>
                     </div>
-                </div>
+                </div>                
             ))}
         </div>
     );

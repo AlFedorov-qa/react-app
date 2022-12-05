@@ -1,0 +1,77 @@
+.header {    
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #010541;
+    padding: 0px 50px;
+    align-items: center;
+    position: fixed;
+    width: 1383px;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 80px;           
+}
+
+.header-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 18px;
+}
+
+.header-title__orange {
+    color: #FF5722;
+}
+
+.header-basket {
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.header-basket__btn {
+    background-image: url("/public/basket-head.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    position: relative;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px;
+    width: 10px;
+    height: 13px;
+    background: #F36223;
+    border-radius: 50px;
+    position: absolute;
+    top: 21px;
+    right: 65px;
+}
+
+.counter__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1499px) {
+    .header {
+        padding: 0px 15px;
+        width: 994px;
+    }
+
+    .counter {
+        right: 30px;
+    }
+}

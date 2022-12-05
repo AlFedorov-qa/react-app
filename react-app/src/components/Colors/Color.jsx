@@ -1,19 +1,28 @@
-import Colors from "../../Data/Colors";
+import { useState } from 'react';
+import colors from "../Data/Colors";
+import ColorButton from './ColorButton';
 import './Color.css';
 
-function color() {
+function Color() {
+    const [activedColor, setActivedColor] = useState(6);
+
+    function hendleClick(e, image) {
+        setActivedColor(image);
+    }
+
     return (
         <div className="characteristics-color__list">
-            {Colors.map((color) => (
-                <label key={color.img}>
-                    <input type="radio" checked name="foto" />
-                    <div className="characteristics-color__image">
-                        <img src={color.img} alt={color.alt} />
-                    </div>
-                </label>
+            {colors.map((color) => (
+                <ColorButton
+                    key={color.image}
+                    color={color}
+                    actived={color.image === activedColor}
+                    onClick={(e) => hendleClick(e, color.image)}
+                />          
+                
             ))}
         </div>
     );
 }
 
-export default color;
+export default Color;

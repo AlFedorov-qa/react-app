@@ -1,0 +1,33 @@
+.btn__image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    cursor: pointer;    
+    background: transparent;
+}
+
+.btn__image>img {
+    height: 60px;    
+}
+
+.btn__input {
+    display: none;
+}
+
+.btn__image_actived {
+    border: 2px solid #F36223;    
+}
+
+.btn__image:active {
+    border: 2px solid #A93A09;    
+}
+
+.btn__image:hover {
+    background: #F2F2F2;
+}

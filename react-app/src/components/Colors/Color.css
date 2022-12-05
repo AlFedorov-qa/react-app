@@ -2,37 +2,3 @@
     display: flex;
     gap: 10px;
 }
-
-.characteristics-color__image {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 80px;
-    height: 80px;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    cursor: pointer;    
-    background: transparent;
-}
-
-.characteristics-color__image>img {
-    height: 60px;    
-}
-
-.characteristics-color__list input {
-    display: none;
-}
-
-input[type=radio]:checked + .characteristics-color__image {
-    border: 2px solid #F36223;    
-}
-
-input[type=radio]:active + .characteristics-color__image {
-    border: 2px solid #A93A09;    
-}
-
-input[type=radio]:hover + .characteristics-color__image {
-    background: #F2F2F2;
-}

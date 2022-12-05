@@ -1,18 +1,28 @@
-import Configs from '../../Data/Configs';
+import { useState } from 'react';
+import configurations from '../Data/configurations'
+import Button from './ConfigButton';
 import './Config.css';
 
-function config() {
+function Configuration() {
+        
+    const [activedConfiguration, setActivedConfiguration] = useState(1);
+
+    function hendleClick(e, memory) {
+        setActivedConfiguration(memory)
+    }
+
     return (
         <div className="configuration__list">
-            {Configs.map((config) => (
-                <label key={config.memory}>
-                    <input type="radio" checked name="memory" />
-                    <div className="btn">{config.memory}</div>
-                </label>
+            {configurations.map((configuration) => (
+                <Button
+                key={configuration.memory}
+                configuration={configuration}
+                actived={configuration.memory === activedConfiguration}
+                onClick={(e) => hendleClick(e, configuration.memory)}
+                />
             ))}
-        </div>
-    );
-
+        </div>        
+    )
 }
 
-export default config;
+export default Configuration;

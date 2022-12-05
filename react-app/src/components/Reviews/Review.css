@@ -74,6 +74,7 @@
     .review-block__photo {
         width: 60px;
         height: 60px;
+        position: absolute;
     }
 
     .star {

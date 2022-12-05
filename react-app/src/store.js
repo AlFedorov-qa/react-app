@@ -10,13 +10,13 @@ const logger = (store) => (next) => (action)=> {
     return result;
 };
 
-let count = [];
+
 
 const localstor = (store) => (next) => (action)=> {
    
     let result = next(action);
 
-    localStorage.setItem('store', count.length);
+    localStorage.setItem('store', JSON.stringify(store.getState()));
     return result;
 }
 

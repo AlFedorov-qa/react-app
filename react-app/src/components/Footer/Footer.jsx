@@ -1,14 +1,19 @@
+import { useCurrentDate } from "@kundinos/react-hooks";
 import './Footer.css';
 
 
 function Footer() {
+
+    const currentDate = useCurrentDate();
+
+    const fullYear = currentDate.getFullYear();
 
     return (
         <footer className="footer">
                 <div className="footer__container">
                     <div className="footer__info">
                         <p>
-                            <b>&#169; ООО «<span className="footer__info-orange">Мой</span>Маркет», 2018-2022.</b>
+                            <b>&#169; ООО «<span className="footer__info-orange">Мой</span>Маркет», 2018-{`${fullYear}`}.</b>
                         </p>
                         <p>
                             Для уточнения информации звоните по номеру

@@ -1,10 +1,10 @@
-import './Table.css';
+import styles from "./Table.module.css"
 
 function Table() {
 
     return (
-        <div className="comparison">
-            <h3 className="comparison__title">Сравнение моделей</h3>
+        <div className={styles.comparison}>
+            <h3 className={styles.comparison__title}>Сравнение моделей</h3>
             <table>
                 <thead>
                     <tr>

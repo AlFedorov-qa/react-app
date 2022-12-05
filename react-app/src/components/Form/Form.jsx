@@ -9,7 +9,7 @@ function Form() {
     const [review, setReview] = useState(localStorage.getItem("review") || '');
 
     const [errorName, setErrorName] = useState();
-    const [errorScore, setErrorScore] = useState();    
+    const [errorScore, setErrorScore] = useState();        
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -34,7 +34,10 @@ function Form() {
             return;
         } else {
             setErrorScore();
-        }        
+        }
+        
+        alert("Ваш отзыв был успешно отправлен и будет отображён после модерации")
+
 
         localStorage.removeItem("name", name);
         localStorage.removeItem("score", score);

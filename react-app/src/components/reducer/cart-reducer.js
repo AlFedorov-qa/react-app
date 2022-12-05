@@ -1,10 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+let defaultState = { products: 0, likes: 0 };
+try {
+  defaultState = JSON.parse(localStorage.getItem('store')).cart;
+} catch (err) {
+}
 
 export const cartSlice = createSlice({
     name: "cart",
 
-    initialState: { products: 0, likes: 0 },
+    initialState: defaultState,
 
     reducers: {
 

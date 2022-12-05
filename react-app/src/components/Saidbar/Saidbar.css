@@ -46,7 +46,7 @@
 }
 
 .price-block {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
 }
 
@@ -81,19 +81,35 @@
 
 .price-heart {
     border: none;
-    cursor: pointer;    
+    cursor: pointer;
     width: 30px;
     height: 30px;
-    background: no-repeat center/80% url("/public/heart.svg");    
+    background: no-repeat center/80% url("/public/heart.svg");
 }
 
-.price-heart:hover {    
+.price-heart:hover {
     background-image: url("/public/heart-hover.svg");
 }
 
 .price-heart:focus:active {
     background-image: url("/public/heart-active.svg");
-}    
+}
+
+.choise-heart {
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: no-repeat center/80% url("/public/heartful.svg");
+}
+
+.choise-heart:hover {
+    background-image: url("/public/heartful.svg");
+}
+
+.choise-heart:focus:active {
+    background-image: url("/public/heartful.svg");
+}
 
 .price-new {
     font-weight: 500;
@@ -145,12 +161,85 @@
     background: #A93A09;
 }
 
+.choise-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    gap: 15px;
+    background: #888888;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.choise-btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/public/basket.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 iframe {
     border: 1px dashed #ccc;
 }
 
-@media (max-width: 1499px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
     .advertising__frame {
         width: 360px;
-    } 
+    }
+
+    .choise-btn {
+        padding: 20px 45px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1023px) {
+    .advertising-block {
+        display: none;
+    }
+
+    .price {
+        padding: 17px 21px 20px 20px;
+    }
+
+    .price-product {
+        gap: 7px;
+    }
+
+    .price-old {
+        gap: 19px;
+    }
+
+    .price-discount {        
+        padding: 2px 8px;
+        gap: 16px;        
+    }
+
+    .delivery {
+        gap: 13px;
+    }
+
+    .delivery__text {
+        font-size: 14px;
+    }
+
+    .price-btn {
+        font-size: 17px;
+        padding: 15px 49px;
+        margin-top: 0px
+    }
+
+    .choise-btn {
+        font-size: 17px;
+        padding: 15px 48px;
+        margin-top: 0px
+    }
 }

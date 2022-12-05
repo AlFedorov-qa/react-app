@@ -15,7 +15,7 @@
 
 .form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .form-cont {
@@ -45,12 +45,12 @@
     display: flex;
     background: #DA4A0C;
     padding: 8px 20px;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     align-items: center;
     font-size: 12px;
 }
 
-.error-name_hidden {    
+.error-name_hidden {
     visibility: hidden;
     height: 30px;
 }
@@ -87,7 +87,7 @@
 .form-area {
     resize: none;
     padding: 15px 20px;
-    border: 1px solid #888888;    
+    border: 1px solid #888888;
     height: 160px;
     font-size: 16px;
     font-family: sans-serif;
@@ -103,8 +103,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 20px;    
-    background: #F36223;    
+    padding: 0px 20px;
+    background: #F36223;
     font-size: 16px;
     color: #FFFFFF;
     width: 177px;
@@ -115,7 +115,7 @@
     margin-top: 30px;
 }
 
-.form-btn:hover{
+.form-btn:hover {
     background: #DA4A0C;
 }
 
@@ -124,7 +124,7 @@
 }
 
 
-@media (max-width: 1499px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
     .form-block {
         padding: 0px;
         max-width: 594px;
@@ -133,4 +133,61 @@
     .input-name {
         width: 335px;
     }
+}
+
+@media (min-width: 360px) and (max-width: 1023px) {
+    .form-block {
+        padding: 0px 0px 0px 5px;
+        max-width: 335px;
+        margin-top: 10px;
+    }
+
+    .form-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .input-name {
+        padding: 9px 15px;
+        width: 303px;
+        font-size: 14px;
+    }
+
+    .error-name_hidden {
+        height: 15px;
+    }
+
+    .error-name_hidden {
+        visibility: hidden;
+        height: 15px;
+    }
+
+    .input-rating {
+        padding: 9px 15px;
+        width: 303px;
+        font-size: 14px;
+    }
+
+    .error-rating_hidden {
+        visibility: hidden;
+        height: 15px;
+    }
+
+    .form-btn {
+        padding: 10px 15px;
+        font-size: 15px;
+        width: 150px;
+        height: 37px;
+        margin-top: 15px;
+    }
+
+    .form-area {
+        padding: 10px 15px;
+        font-size: 15px;
+        height: 168px;       
+    }
+
+
+   
 }

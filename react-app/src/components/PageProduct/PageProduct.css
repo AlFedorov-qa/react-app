@@ -2,7 +2,7 @@
     max-width: 1500px;
     margin: 0 auto;
     font-family: sans-serif;
-    background: #F8F8F8;    
+    background: #F8F8F8;
 }
 
 .wrapper__padding {
@@ -14,7 +14,7 @@
     gap: 4px;
     padding: 8px 0px;
     align-items: center;
-    padding-top: 88px;    
+    padding-top: 88px;
 }
 
 .breadcrumbs__link {
@@ -23,8 +23,8 @@
     margin-top: 10px;
 }
 
-.product {   
-    align-items: center;    
+.product {
+    align-items: center;
 }
 
 .product-title {
@@ -32,17 +32,6 @@
     font-size: 32px;
     margin: 0;
     gap: 10px;
-}
-
-.product-photos {    
-    display: flex;    
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.product-img {
-    height: 387px;
-    margin-top: 30px;
 }
 
 .wrapper__flex {
@@ -145,17 +134,13 @@ a:focus:active {
     color: #A93A09;
 }
 
-@media (max-width: 1499px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
     .wrapper {
         max-width: 1024px;
     }
 
     .wrapper__padding {
         padding: 0px 15px;
-    }
-
-    .product-img {
-        height: 272px;
     }
 
     .comparison {
@@ -165,9 +150,90 @@ a:focus:active {
     .wrapper__flex {
         gap: 40px;
         margin-bottom: 44px;
-    }   
+    }
 
     .review {
         max-width: 594px;
-    }    
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 360px;
+    }
+
+    .wrapper__padding {
+        padding: 0px 10px;
+    }
+
+    .breadcrumbs {
+        padding-top: 58px;
+    }
+
+    .breadcrumbs__link {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .product-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .wrapper__flex {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .characteristics-color__name {
+        font-size: 14px;
+    }
+
+    .characteristics {
+        gap: 22px;
+        font-size: 14px;
+    }
+
+    .configuration__name {
+        font-size: 14px;
+    }
+
+    .characteristic__name {
+        font-size: 14px;
+    }
+
+    .characteristic__list {
+        gap: 11px;
+    }
+
+    .characteristic__list li::before {
+        width: 8px;
+        height: 8px;
+    }
+
+
+
+    .description__name {
+        font-size: 14px;
+    }
+
+
+
+    .review {
+        padding: 0px 0px 0px 5px;
+        max-width: 335px;
+    }
+
+
+
+    .review-header__title {
+        font-size: 20px;
+    }
+
+    .review-header__count {
+        font-size: 20px;
+    }
 }

@@ -22,3 +22,9 @@
 .button:hover {
     background: #F2F2F2;
 }
+
+@media (min-width: 360px) and (max-width: 1023px) {
+    .button {
+        padding: 9px 20px;
+    }
+}

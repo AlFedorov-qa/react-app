@@ -17,11 +17,11 @@ function Footer() {
                         </p>
                         <p>
                             Для уточнения информации звоните по номеру
-                            <a href="tel:79000000000">+7 900 000 0000</a>,
+                            <a href="tel:79000000000"> +7 900 000 0000</a>,
                         </p>
                         <p>
                             а предложения по сотрудничеству отправляйте на почту
-                            <a href="mailto:partner@mymarket.com">partner@mymarket.com</a>
+                            <a href="mailto:partner@mymarket.com"> partner@mymarket.com</a>
                         </p>
                     </div>
                     <a className="footer__ontop" href="#">Наверх</a>
